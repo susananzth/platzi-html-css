@@ -1,0 +1,46 @@
+/*%=%=%=%=%=%=% GLOBAL %=%=%=%=%=%=%*/
+    /*======== fonts ========*/
+    @font-face {
+        font-family: 'Montserrat';
+        src: local('Montserrat'), 
+        url('../font/Montserrat-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+        font-weight: normal;
+      }
+      /* Alternativa de font-face 
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap'); */
+      
+    /*======== scrollbar ========*/
+    ::-webkit-scrollbar{background: #e6e2e4;width: 10px;}
+    ::-webkit-scrollbar-thumb{background: #ff7cbda6;border-radius: 2px;cursor: pointer;}
+    ::-webkit-scrollbar-thumb:hover{background: #ff7cbd82;cursor: pointer;}
+    /*======== headings ========*/
+    h1, h2, h3, h4, h5, h6{font-family: 'Montserrat', sans-serif;font-weight: 400;-webkit-margin-after: 0;-webkit-margin-before: 0;-webkit-margin-end: 0;-webkit-margin-start: 0;}
+    h1{font-size: 3rem;}h2{font-size: 2.5rem;}h3{font-size: 2.1rem;}h4{font-size: 1.8rem;}
+    h5{font-size: 1.5rem;}h6{font-size: 1.2rem;}
+    /*======== navbar ========*/
+    .navbar{
+      background-color: #cc81b8;
+      list-style: none;
+      margin: 0;
+      padding: .5rem;
+    }
+    .navbar__item{
+      display: inline-block;
+      font-size: 1.5rem;
+
+    }
+    .navbar__item a{
+      color: #e6e2e4;
+      padding: .5rem;
+      text-decoration: none;
+    }
+    .navbar__item a:hover, .navbar__item a:active, .navbar__item a:focus{
+      color: #f3cfeb;
+      padding: .5rem;
+      text-decoration: underline;
+    }
+    /*======== content ========*/
+    html, body{height: 100%;margin: 0;padding: 0;font-family: 'Montserrat', sans-serif; font-size: 16px;}
+    body{background: linear-gradient(#f3cfeb, #cc81b8) fixed;}
+    .content{background: #fff1ff;margin: 0 auto;max-width: 1440px;padding-left: 1rem;padding-right: 1rem;}
+
