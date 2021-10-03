@@ -22,24 +22,97 @@
     <nav>
         <ul class="navbar">
             <li class="navbar__item"><a href="#">Inicio</a></li>
-            <li class="navbar__item"><a href="#">Inicio</a></li>
+            <li class="navbar__item"><a href="#images">Imágenes</a></li>
+            <li class="navbar__item"><a href="#cssBasic">CSS Básico</a></li>
         </ul>
     </nav>
     <header>
-        <h1>Curso definitivo de HTML y CSS | SusanaNzth</h1>
+        <h1 class="text-center my-2">Curso definitivo de HTML y CSS</h1>
+        <h3 class="text-center my-2">SusanaNzth</h3>
     </header>
-    <aside>
-        <ul>
-            <li><a href="#cssBasico">CSS Básico</a></li>
-            <li><a href="#">CSS Medio</a></li>
-        </ul>
-    </aside>
+    <section id="images" class="bg-white">
+        <h3><a href="#images"># Imágenes</a></h3>
+        <div class="card-body row px-4">
+            <figure class="text-center my-1">
+                <img src="../img/tabla-imaneges-platzi.PNG" alt="Tabla de diferencias de las imágenes. Fuente: Platzi." 
+                    class="img-thumbnail">
+                    <figcaption class="figcaption">Tabla de diferencias de las imágenes. Fuente: 
+                        <a href="https://platzi.com/clases/2008-html-css/31084-tipos-de-imagenes/" 
+                        target="_blank" rel="noopener noreferrer">Platzi</a>.
+                    </figcaption>
+            </figure>
+            <blockquote class="text-justify my-1">
+                <b>Lossless</b><br>
+                Sin pérdida. Los formatos de imagen sin pérdida capturan todos los datos de su archivo
+                original. No se pierde nada del archivo original, foto o obra de arte, de ahí el
+                término "sin pérdida". El archivo aún puede estar comprimido, pero todos los formatos
+                sin pérdida podrán reconstruir su imagen a su estado original. <u>Ejemplo</u>: Graphics Interchange Format (GIF),
+                Portable Network Graphics (PNG 8, PNG 24), Scalable Vector Graphics (SVG - Vector).
+                <br><br>Fuente: <a href="https://platzi.com/clases/2008-html-css/31084-tipos-de-imagenes/" 
+                                target="_blank" rel="noopener noreferrer">Platzi</a>
+            </blockquote>
+            <blockquote class="text-justify my-1">
+                <b>Lossy</b><br>
+                Con pérdida. Los formatos de imagen con pérdida se aproximan a su imagen original. Por
+                ejemplo, una imagen con pérdida podría reducir la cantidad de colores en su imagen
+                o analizar la imagen en busca de datos innecesarios. Estos reducirá el tamaño del
+                archivo, aunque pueden reducir la calidad de su imagen. <u>Ejemplo</u>: Photographic Experts Group (JPG / JPEG),
+
+                <br><br>Fuente: <a href="https://platzi.com/clases/2008-html-css/31084-tipos-de-imagenes/" 
+                                target="_blank" rel="noopener noreferrer">Platzi</a>
+            </blockquote>
+            <ul class="list ul-square my-1">
+                <li>
+                    Se recomienda que el máximo de peso de una imagen sea de 70Kb. Se pueden utilizar varios comprosores de imágenes: 
+                    <a href="https://tinypng.com/" target="_blank" rel="noopener noreferrer"
+                        data-bs-toggle="tooltip" data-bs-placement="top" title="Comprime imágenes sin perder calidad">tinyPNG</a>, 
+                    <a href="https://compressor.io/" target="_blank" rel="noopener noreferrer"
+                        data-bs-toggle="tooltip" data-bs-placement="top" title="Comprime imágenes sin perder calidad">compressor.io</a>,
+                    <a href="https://www.verexif.com/" target="_blank" rel="noopener noreferrer"
+                        data-bs-toggle="tooltip" data-bs-placement="top" title="Elimina los metadatos">verexif</a>,
+                    <a href="https://convertio.co/es/jpg-svg/" target="_blank" rel="noopener noreferrer"
+                        data-bs-toggle="tooltip" data-bs-placement="top" title="Convertidor de imágenes">convertio</a>
+                </li>
+                <li>
+                    Un sitio web para descargar imágenes y vídeos de forma gratuita: <a href="https://www.pexels.com/" target="_blank" 
+                        rel="noopener noreferrer">pexels</a>
+                </li>
+                    
+            </ul>
+            <figure class="text-center my-1">
+                <img src="../img/example-img-small.jpg" alt="Ejemplo de una imagen pequeña"
+                    class="img-thumbnail d-block m-auto">
+                <figcaption class="figcaption">
+                    Ejemplo de una imagen pequeña. Foto de Александар Цветановић en Pexels
+                </figcaption>
+            </figure>
+            <figure class="text-center my-1">
+                <img src="../img/example-img-small.jpg" alt="Ejemplo de una imagen pequeña"
+                    width="100" height="100" class="img-thumbnail d-block m-auto">
+                <figcaption class="figcaption">
+                    Ejemplo de una imagen con estilos embedido. Foto de Александар Цветановић en Pexels
+                </figcaption>
+            </figure>
+        </div>
+    </section>
     <section>
         <div id="cssBasico">
-            <p>Los estilos se pueden añadir con los selectores: 
-                <code>p{ <span class="comment">/* Código */</span> }</code> 
-                <code>#idDeP{ <span class="comment">/* Código */</span> }</code> 
-                <code>.class-de-p{ <span class="comment">/* Código */ </span> }</code></p>
+
+            <p>Los estilos css se pueden añadir con los selectores: </p>
+            <code>p{ <span class="comment">/* Código */</span> }</code> 
+            <code>#idDeP{ <span class="comment">/* Código */</span> }</code> 
+            <code>.class-de-p{ <span class="comment">/* Código */ </span> }</code>
+            
+            <div>
+                <p>Creando una lista de compras con imágenes</p>
+                <ul>
+                    <li>
+                        <figure>
+                            <img src="" alt="" srcset="">
+                        </figure>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>    
     <footer>
