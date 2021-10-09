@@ -18,7 +18,7 @@
         <!-- Estilos -->
         <link rel="stylesheet" href="css/style.css">
     </head>
-<body>
+<body class="content">
     <nav class="fixed-top">
         <ul class="navbar">
             <li class="navbar__item"><a href="#">Inicio</a></li>
@@ -28,11 +28,11 @@
             <li class="navbar__item"><a href="#cssBasic">CSS Básico</a></li>
         </ul>
     </nav>
-    <header>
+    <header class="section">
         <h1 class="text-center my-2">Curso definitivo de HTML y CSS</h1>
         <h3 class="text-center my-2">SusanaNzth</h3>
     </header>
-    <section id="images">
+    <section id="images" class="section">
         <h3><a href="#images"># Imágenes</a></h3>
         <figure class="bg-light radius text-center p-1 my-1">
             <img src="../img/tabla-imaneges-platzi.PNG" alt="Tabla de diferencias de las imágenes. Fuente: Platzi." 
@@ -81,21 +81,25 @@
                 
         </ul>
         <figure class="bg-light radius text-center my-1 p-1">
-            <img src="../img/example-img-small.jpg" alt="Ejemplo de una imagen pequeña"
-                class="img-thumbnail d-block m-auto w-sm-100 w-lg-auto">
+            <picture>
+                <source media="{min-width: 1200px}" srcset="img/example-img-large.jpg">
+                <source media="{min-width: 992px}" srcset="img/example-img-medium.jpg">
+                <img src="img/example-img-small.jpg" alt="Ejemplo de una imagen pequeña"
+                    class="img-thumbnail d-block m-auto w-sm-100 w-lg-auto">
+            </picture>
             <figcaption class="figcaption d-inline-block">
-                Ejemplo de una imagen pequeña. Foto de Александар Цветановић en Pexels
+                Ejemplo de una imagen con media query. Foto de Александар Цветановић en Pexels
             </figcaption>
         </figure>
         <figure class="bg-light radius text-center my-1 p-1">
-            <img src="../img/example-img-small.jpg" alt="Ejemplo de una imagen pequeña"
+            <img src="img/example-img-small.jpg" alt="Ejemplo de una imagen pequeña"
                 width="100" height="100" class="img-thumbnail d-block m-auto">
             <figcaption class="figcaption d-inline-block">
                 Ejemplo de una imagen con estilos embedido. Foto de Александар Цветановић en Pexels
             </figcaption>
         </figure>
     </section>
-    <section id="video">
+    <section id="video" class="section">
         <h3><a href="#video"># Vídeo</a></h3>
         <div class="bg-light radius p-1">
             <div class="text-center mb-1">
@@ -117,7 +121,7 @@
             <script src="https://gist.github.com/susananzth/ad239313f348e9c5fe7bd2e7ad7deecd.js"></script>
         </div>
     </section>
-    <section id="cssBasic">
+    <section id="cssBasic" class="section">
         <h3><a href="#cssBasic"># CSS Básico</a></h3>
         <div class="bg-light radius p-1">
             <p class="mb-1">Los estilos css se pueden añadir con los selectores: </p>
@@ -137,7 +141,7 @@
             </ul>
         </div>
     </section>    
-    <footer>
+    <footer class="section">
         Susana Piñero Rodríguez @susananzth
     </footer>
 </body>
